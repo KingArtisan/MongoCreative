@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thanksgiving MadLib</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="javascripts/comments.js"></script>
+<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <div id="bg">
+        <img src="https://www.churchmediaresource.com/wp-content/uploads/2014/11/Screen-Shot-2014-11-14-at-10.57.12-pm.png" alt="">
+    </div>
+    <br><br>
+<div class="container white-back">
+    <div class="row">
+        <div class="col-sm">
+            <br>
+            <h1 align="center">Thanksgiving MadLib</h1>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 inline">
+            <p class="spaced">It was a <input id="first"/><small>(adjective)</small>, cold November day. I woke up to the <input id="second"/><small>(adjective)</small> smell of <input id="third"/><small>(noun)</small> roasting in the <input id="fourth"/><small>(noun)</small> downstairs. I <input id="fifth"/><small>(verb)</small> down the stairs to see if I could help <input id="sixth"/><small>(verb)</small> the dinner. My mom said, "See if <input id="seventh"/><small>(name)</small> needs a fresh <input id="eighth"/><small>(food)</small>." So I carried a tray of glasses full of <input id="ninth"/><small>(noun)</small> into the <input id="tenth"/><small>(verb ending in -ing)</small> room. When I got there, I couldn't believe my <input id="eleventh"/><small>(noun)</small>! There were <input id="twelfth"/><small>(any)</small> <input id="thirteenth"/><small>(any)</small> on the <input id="fourteenth"/><small>(noun)</small>!</p> 
+        </div>
+    </div>
+    <div class="row">
+        <form id="commentForm" action="" style="width:100%;">
+            <div class="col-sm">
+                <input class="form-control" type="text" id="name" placeholder="Your Name Here">
+            </div>
+            <br>
+        </form>
+    </div>
+    <div class="row" align="center">
+        <div class="col-sm">
+            <button class="btn btn-md btn-danger" id="postComment">Submit Your Madlib</button>
+        </div>
+        <div class="col-sm">
+            <button class="btn btn-md btn-warning" id="getComments">See Submitted MadLibs</button>
+        </div>
+        <div class="col-sm">
+            <button class="btn btn-md btn-danger" id="getCommentsName">See (Name)'s Submissions</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row" id="savedMadlibsDiv">
+        <div class="col-sm">
+            <h5 align="center">Madlibs:</h5>
+            <div id="comments"></div>
+        </div>
+    </div>
+    <br>
+</div>
+</body>
+</html>
